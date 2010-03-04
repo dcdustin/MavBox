@@ -2,6 +2,6 @@ name: MavBox
 author: Dustin Hansen
 category: Interface
 tags: [dialog, media, utility, UI, window]
-docs: http://maveno.us/labs/mavbox
-demo: http://maveno.us/labs/mavbox
-current: 1.0
+docs: http://maveno.us/library/examples/html5/mavbox
+demo: http://maveno.us/library/examples/html5/mavbox
+current: 0.1.0

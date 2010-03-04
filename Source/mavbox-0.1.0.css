@@ -1,0 +1,235 @@
+/* CONTAINER ELEMENT */
+.mavbox {
+	/* REQUIRED */
+	position: absolute;
+	display: none;
+	z-index: 1000;
+
+	/* YOUR STYLES */
+	background-color: #fff;
+	-moz-border-radius: 6px;
+}
+
+
+/* USED IF NO TITLEBAR IS SET */
+.mavbox .mavbox-notitle { }
+
+
+/* USED IF NO BUTTONS ARE SET */
+.mavbox .mavbox-nobuttons {  }
+
+
+/* TITLEBAR ELEMENT */
+.mavbox > div.mavbox-titlebar {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	padding: 10px 15px 0;
+	background: #f1f1f1;
+	border: 1px solid #dcdcdc;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	cursor: default;
+}
+	.mavbox > div.mavbox-movable { cursor: move !important; }
+	.mavbox > div.mavbox-titlebar > .mavbox-titletext { 
+		float: left; 
+		overflow: hidden;
+		max-width: 60%;
+		height: 1.5em;
+	}
+	.mavbox > div.mavbox-titlebar > div.mavbox-button {
+		text-indent: -5000px;
+		font-size: 0.000em;
+		display: block;
+		width: 22px;
+		height: 18px;
+		float: right;
+		cursor: pointer;
+		-moz-user-select: all !important;
+		margin-left: 5px;
+		background: #e3e3e3 url(/library/media/icons/ui-icons.png) no-repeat left top;
+		-moz-border-radius: 3px;
+	}
+		.mavbox > div.mavbox-titlebar > div.mavbox-button:hover { background-color: #ccc; }
+	.mavbox div.mavbox-titleclose { background-position: -93px -127px !important; }
+	.mavbox div.mavbox-titlemin { background-position: -61px -125px !important; }
+	.mavbox div.mavbox-titlemin-restore { background-position: -61px -130px !important; }
+	.mavbox div.mavbox-titlemax { background-position: -189px -127px !important; }
+	.mavbox div.mavbox-titlemax-restore { background-position: -173px -128px !important; }
+
+.mavbox > div.mavbox-titlebar:after { content: "."; font-size: 0; height: 0; visibility: hidden; display: block; clear: both; }
+	
+
+/* BOX'S MESSAGE AREA */
+.mavbox > div.mavbox-message {
+	/* REQUIRED */
+	overflow: auto;
+
+	/* YOUR STYLES */
+	padding: 15px;
+	border-left: 1px solid #dcdcdc;
+	border-right: 1px solid #dcdcdc;
+}
+.mavbox > div.mavbox-message:after { content: "."; font-size: 0; height: 0; visibility: hidden; display: block; clear: both; }
+
+
+
+/* BUTTON AREA */
+.mavbox > div.mavbox-buttonarea {
+	padding: 0 15px 6px;
+	background: #f1f1f1;
+	border: 1px solid #dcdcdc;
+	-moz-border-radius-bottomleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+}
+
+.close-button {
+	cursor: pointer;
+	float: right;
+	width: 70px;
+	height: 42px;
+	font-size: 0.000em;
+	text-indent: -10000em;
+	background: url(/library/media/images/closelabel.png) no-repeat center center !important;
+}
+
+.mavbox > div.mavbox-buttonarea:after, .mavbox-media > div.mavbox-buttonarea:after { content: "."; font-size: 0; height: 0; visibility: hidden; display: block; clear: both; }
+
+/* BOX'S BUTTONS */
+.mavbox > div.mavbox-buttonarea > .mavbox-button {
+	cursor: pointer;
+	float: right;
+	margin: 6px 3px 0;
+	height: 25px;
+	line-height: 25px;
+	padding: 2px 12px;
+	background: #d9d9d9;
+	border: 1px solid #c9c9c9;
+	-moz-border-radius: 4px;
+}
+	.mavbox > div.mavbox-buttonarea > .mavbox-button:hover {
+		background: #ccc;
+		border-color: #bbb;
+	}
+
+
+
+
+
+
+.mavbox-media, .mavbox-media-alt {
+	/* REQUIRED */
+	position: absolute;
+	display: none;
+	z-index: 1000;
+
+	/* YOUR STYLES */
+	background-color: #fff;
+	-moz-border-radius: 6px;
+}
+
+.mavbox-media > div.mavbox-message {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin: 15px;
+}
+
+.mavbox-media-alt > div.mavbox-message {
+	/* REQUIRED */
+	overflow: auto;
+
+	/* YOUR STYLES */
+	padding: 15px;
+}
+
+.mavbox-media > div.mavbox-buttonarea {
+	padding: 5px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.mavbox-media > .mavbox-media-buttonarea > .mavbox-button {
+	
+}
+
+.mavbox-media-title {
+	cursor: default;
+	float: left;
+	padding: 5px 0 0 15px;
+}
+
+.mavbox-media-alt { 
+	background: rgba(255,255,255, 0.1);
+	-moz-border-radius: 0;
+}
+.mavbox-media {
+	position: relative;
+	background: rgba(255,255,255, 1);
+	-moz-border-radius: 0;
+}
+.mavbox-media-alt > div.mavbox-titlebar:after { content: "."; font-size: 0; height: 0; visibility: hidden; display: block; clear: both; }
+.mavbox-media > div.mavbox-titlebar:after { content: "."; font-size: 0; height: 0; visibility: hidden; display: block; clear: both; }
+
+.mavbox-media-goleft {
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 40%;
+}
+
+.mavbox-media-goright {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 40%;
+}
+.mavbox-media-goleft:hover,.mavbox-media-goleft:active,.mavbox-media-goleft:focus {
+	background: transparent url(/library/media/images/prevlabel.png) no-repeat left center;
+}
+.mavbox-media-goright:hover {
+	background: transparent url(/library/media/images/nextlabel.png) no-repeat right center;
+}
+
+.mavbox-nav-disable { display: none; }
+
+
+.spinner { background-image: url(/library/media/images/spinner_fb.gif); background-repeat: no-repeat; background-position: center center; }
+
+/* THE IFRAME SHIM IF ONE IS USED */
+.mavbox-iframeshim { }
+
+
+/* USED IN MODALS TO PREVENT ACCESS TO PAGE */
+.mavbox-shade {
+	/* REQUIRED */
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+
+	/* IF YOU DON'T WANT TO USE RGBA COMMENT OUT THE NEXT LINE AND USE:
+		filter: alpha(opacity = 80);
+		-moz-opacity: 0.8;
+		-webkit-opacity: 0.8;
+        opacity: 0.8;
+		background: #000;
+	*/
+	background: #000;
+	filter: alpha(opacity = 80);
+	background: rgba(0,0,0, 0.9);
+
+	/* YOUR STYLES */
+}

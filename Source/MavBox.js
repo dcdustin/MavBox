@@ -7,14 +7,17 @@ license: MIT-style license.
 authors: Dustin Hansen
 docs: http://maveno.us
 requires:
-- core/1.2.4
-- more/1.2.4.2: [Class.Occludes]
+- core/1.2.4: [Class, Class.Extras, Event, Element.Event, Element,Style, Element.Dimensions, Selectors, JSON, Fx.Tween, Fx.Morph, Fx.Transitions, Request.HTML, Request.JSON]
+- more/1.2.4.2: [Class.Binds, Drag.Move]
 
 provides: [MavBox, MavBox.Request, MavBox.Request.HTML, MavBox.Media]
 
 ---
 */
-
+/*
+ * TODO: spinner image needs to be replaced upon each load of an image in MavBox.Media
+ * TODO: still need to implement resizable box
+ */
 var MavBox = new Class({
 	Implements: [Options, Events],
 
@@ -428,7 +431,7 @@ var MavBox = new Class({
 			case 'center': case 'middle': default:
 				_str = (((this.docSize[_xy] - this.size[_xy])/2) + docScroll[_xy]) + 'px';
 		}
-		
+
 		if (_str.toInt() < 0) { _str = 0; }
 
 		return _str;
@@ -683,6 +686,7 @@ MavBox.Media = new Class({
 
 	show: function(_href) {
 		document.id(this.id + '_messagearea').getChildren('div').removeClass('mavbox-nav-disable');
+
 		this.messageArea.setStyle('background-image','none');
 
 		document.id('mav_media_title').empty();

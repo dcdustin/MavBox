@@ -1,18 +1,20 @@
 /*
 ---
-
-script: MavBox
 description: My implementation of an accessible dialog window built on mootools.
-license: MIT-style license.
-authors: Dustin Hansen
-docs: http://maveno.us
+
+license: MIT-style
+
+authors:
+- dustin
+- Dustin Hansen
+
 requires:
 - core/1.2.4: [Class, Class.Extras, Event, Element.Event, Element,Style, Element.Dimensions, Selectors, JSON, Fx.Tween, Fx.Morph, Fx.Transitions, Request.HTML, Request.JSON]
 - more/1.2.4.2: [Class.Binds, Drag.Move]
 
 provides: [MavBox, MavBox.Request, MavBox.Request.HTML, MavBox.Media]
 
----
+...
 */
 
 /*

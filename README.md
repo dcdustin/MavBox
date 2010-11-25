@@ -3,7 +3,7 @@ MavBox
 
 Provides MavBox and MavBox.Media for the displaying of Dialog styled windows for text, media, and webpages.
 
-![MavBox](http://github.com/dcdustin/MavBox/blob/master/MavBox.png)
+![MavBox](https://github.com/dcdustin/MavBox/blob/master/MavBox.png)
 
 How to use
 ----------

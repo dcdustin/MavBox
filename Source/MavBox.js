@@ -14,6 +14,7 @@ provides: [MavBox, MavBox.Request, MavBox.Request.HTML, MavBox.Media]
 
 ---
 */
+
 /*
  * TODO: spinner image needs to be replaced upon each load of an image in MavBox.Media
  * TODO: still need to implement resizable box

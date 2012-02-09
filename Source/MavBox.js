@@ -96,7 +96,7 @@ var MavBox = new Class({
 		}
 	},
 	destroy: function() {
-		this.fire('beforeDestroy');
+		this.fireEvent('beforeDestroy');
 
 		this.elem.dispose();
 
